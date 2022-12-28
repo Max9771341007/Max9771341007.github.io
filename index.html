@@ -12,26 +12,23 @@
 <body>
 <div class="navbar">
     <div class="navbar__menu">
-        <div class="navbar__menu-item">
+        <div class="navbar__menu-item active"  datatype="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <h2 class="navbar__menu-item_header">Search</h2>
+            <h2 class="navbar__menu-item_header" >Поиск</h2>
+        </div>
+        <div class="navbar__menu-item" datatype="news">
+            <i class="fa-solid fa-school"></i>
+            <h2 class="navbar__menu-item_header">О школе</h2>
         </div>
         <div class="navbar__menu-item">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h2 class="navbar__menu-item_header">Search</h2>
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h2 class="navbar__menu-item_header">Преподаватели</h2>
         </div>
         <div class="navbar__menu-item">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h2 class="navbar__menu-item_header">Search</h2>
+            <i class="fa-solid fa-users"></i>
+            <h2 class="navbar__menu-item_header">Классы</h2>
         </div>
-        <div class="navbar__menu-item">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h2 class="navbar__menu-item_header">Search</h2>
-        </div>
-        <div class="navbar__menu-item">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <h2 class="navbar__menu-item_header">Search</h2>
-        </div>
+
     </div>
 
     <div class="navbar__btn-open">
@@ -39,5 +36,33 @@
 <!--        <i class="fa-solid fa-xmark"></i>-->
     </div>
 </div>
+
+<main class="central-search">
+    <h2 class="central-main__header">Поиск</h2>
+    <div class="central-main__text">Здесь вы можете найти нужного вам преподавателя, группу или ученика, чтобы узнать какое у него будет расписание на сегодняшний день или на этой неделе с целью узнать, в каком кабинете и когда будет находиться объект поиска.</div>
+    <div class="search__info">Ниже в выпадающем списке выберите объект поиска(педагог, ученик, корпус, группа и тд.)</div>
+    <div class="search__block">
+        <div class="search__dropdown-filter">
+            <div class="search__attribute-btn">
+                <span class="search__attribute">Педагог </span><i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <ui class="search__attribute-list">
+                <li class="search__attribute-elem">Педагог</li>
+                <li class="search__attribute-elem">Ученик</li>
+                <li class="search__attribute-elem">Группа</li>
+                <li class="search__attribute-elem">Кабинет</li>
+                <li class="search__attribute-elem">Корпус</li>
+            </ui>
+        </div>
+        <div class="central-main-search">
+            <input type= 'search' class="central-main__s">
+            <button class="central-main__loop"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+</main>
+<div class="central__news"></div>
+<script src = 'script.js'></script>
 </body>
 </html>
