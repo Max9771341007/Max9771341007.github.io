@@ -16,11 +16,14 @@
 }
 
 .navbar__menu-item {
-
-    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
     margin-top: 40px;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -66,6 +69,31 @@
     min-height: 100vh;
     float: right;
     background: #7f9183;
+}
+
+.central__school {
+    float: right;
+    width: 85%;
+    min-height: 100vh;
+    display: none;
+    background: #f7b32b;
+}
+
+.central__teachers {
+    padding: 50px 0;
+    float: right;
+    width: 85%;
+    min-height: 100vh;
+    display: none;
+    background: #EDC7CF;
+}
+
+.central__classes {
+    float: right;
+    width: 85%;
+    min-height: 100vh;
+    display: none;
+    background: #ECFFF8;
 }
 
 .central-main__header {
@@ -187,4 +215,57 @@
     transform: scale(1.25);
     cursor: pointer;
     transition: 1s;
+}
+
+
+.teachers__header {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    color: #54577C;
+}
+
+.teachers__text {
+    width: 700px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    color: #54577C;
+    font-size: 25px;
+}
+
+
+.teachers__grid-options {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8,10%);
+    grid-auto-rows: 100px;
+}
+
+.teachers__grid-item {
+    border: 3px solid #54577C;
+    border-left: none;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDC7CF;
+    color: #54577C;
+}
+
+.option {
+    font-weight: 900;
+    background: #7f9183;
+    color: white;
+}
+.teachers__grid-item:first-child {
+    border-left: 3px solid #54577C;
+}
+
+.teachers__grid-user {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(8,10%);
+    grid-auto-rows: 100px;
 }

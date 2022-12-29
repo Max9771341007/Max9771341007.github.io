@@ -12,22 +12,22 @@
 <body>
 <div class="navbar">
     <div class="navbar__menu">
-        <div class="navbar__menu-item active"  datatype="search">
+        <button class="navbar__menu-item active"  value="1">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <h2 class="navbar__menu-item_header" >Поиск</h2>
-        </div>
-        <div class="navbar__menu-item" datatype="news">
+            <h2 class="navbar__menu-item_header">Поиск</h2>
+        </button>
+        <button class="navbar__menu-item" value="2">
             <i class="fa-solid fa-school"></i>
             <h2 class="navbar__menu-item_header">О школе</h2>
-        </div>
-        <div class="navbar__menu-item">
+        </button>
+        <button class="navbar__menu-item" value="3">
             <i class="fa-solid fa-person-chalkboard"></i>
             <h2 class="navbar__menu-item_header">Преподаватели</h2>
-        </div>
-        <div class="navbar__menu-item">
+        </button>
+        <button class="navbar__menu-item" value="4">
             <i class="fa-solid fa-users"></i>
             <h2 class="navbar__menu-item_header">Классы</h2>
-        </div>
+        </button>
 
     </div>
 
@@ -62,7 +62,58 @@
     </div>
 
 </main>
-<div class="central__news"></div>
+<div class="central__school">
+
+
+</div>
+<div class="central__teachers">
+    <h2 class="teachers__header">Преподаватели</h2>
+    <div class="teachers__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet illum nam praesentium quibusdam voluptatem voluptatibus.</div>
+    <div class="teachers__grid-options">
+        <div class="teachers__grid-item option">Фамилия</div>
+        <div class="teachers__grid-item option">Имя</div>
+        <div class="teachers__grid-item option">Отчество</div>
+        <div class="teachers__grid-item option">Курируемый класс</div>
+        <div class="teachers__grid-item option">Направление</div>
+        <div class="teachers__grid-item option">Занятие сейчас</div>
+        <div class="teachers__grid-item option">Следующее занятие</div>
+        <div class="teachers__grid-item option">С кем занятие</div>
+    </div>
+    <div class="teachers__grid-user">
+        <div class="teachers__grid-item" datatype="surname">Иванов</div>
+        <div class="teachers__grid-item" datatype="name">Иван</div>
+        <div class="teachers__grid-item" datatype="thirdname">Иванович</div>
+        <div class="teachers__grid-item" datatype="mainClass">1А</div>
+        <div class="teachers__grid-item" datatype="sience">Физика</div>
+        <div class="teachers__grid-item" datatype="now">Л-208</div>
+        <div class="teachers__grid-item" datatype="next">Л-308</div>
+        <div class="teachers__grid-item" datatype="classNow">2А</div>
+    </div>
+</div>
+<div class="central__classes">
+    <h2 class="classes__header">Преподаватели</h2>
+    <div class="classes__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet illum nam praesentium quibusdam voluptatem voluptatibus.</div>
+    <div class="classes__grid-options">
+        <div class="classes__grid-item classesOption">Фамилия</div>
+        <div class="classes__grid-item classesOption">Имя</div>
+        <div class="classes__grid-item classesOption">Отчество</div>
+        <div class="classes__grid-item classesOption">Курируемый класс</div>
+        <div class="classes__grid-item classesOption">Направление</div>
+        <div class="classes__grid-item classesOption">Занятие сейчас</div>
+        <div class="classes__grid-item classesOption">Следующее занятие</div>
+        <div class="classes__grid-item classesOption">С кем занятие</div>
+    </div>
+    <div class="classes__grid-user">
+        <div class="classes__grid-item" datatype="surname">Иванов</div>
+        <div class="classes__grid-item" datatype="name">Иван</div>
+        <div class="classes__grid-item" datatype="thirdname">Иванович</div>
+        <div class="classes__grid-item" datatype="mainClass">1А</div>
+        <div class="classes__grid-item" datatype="sience">Физика</div>
+        <div class="classes__grid-item" datatype="now">Л-208</div>
+        <div class="classes__grid-item" datatype="next">Л-308</div>
+        <div class="classes__grid-item" datatype="classNow">2А</div>
+    </div>
+</div>
 <script src = 'script.js'></script>
 </body>
 </html>
