@@ -238,7 +238,7 @@
     margin-top: 40px;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(8,10%);
+    grid-template-columns: repeat(5,10%);
     grid-auto-rows: 100px;
 }
 
@@ -266,6 +266,70 @@
 .teachers__grid-user {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(8,10%);
+    grid-template-columns: repeat(5,10%);
+    grid-auto-rows: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.classes__header {
+    font-size: 80px;
+    font-weight: 900;
+    color: #54577C;
+    text-align: center;
+}
+
+.classes__text {
+    width: 700px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    color: #54577C;
+    font-size: 25px;
+}
+
+
+.classes__grid-options {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,10%);
+    grid-auto-rows: 100px;
+}
+
+.classes__grid-item {
+    border: 3px solid #54577C;
+    border-left: none;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDC7CF;
+    color: #54577C;
+}
+
+.classes__grid-item:first-child {
+    border-left: 3px solid #54577C;
+}
+
+.classes__grid-user {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,10%);
     grid-auto-rows: 100px;
 }
